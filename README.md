@@ -28,26 +28,32 @@ This project integrates **Sentence-BERT** for semantic similarity, **Google Gemi
 ---
 
 ## 📂 Project Structure
+
+```bash
 Career_Recommendation/
 │
 ├── UI/
-│   ├── public/
-│   ├── src/
-│   ├── README.md
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package-lock.json
-│   ├── package.json
-│   └── vite.config.js
 │
-├── backend/
-│   ├── ScriptFile.py            # Main Python script
-│   ├── courses.pdf
-│   ├── final_course_data_for_bert.csv
-│   ├── flowchart.json
+├── public/
+│
+├── src/
 │   └── README.md
 │
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── vite.config.js
+│
+├── backend/
+│
+├── ScriptFile.py                  # Main Python script
+├── courses.pdf                    # Flowchart visualization
+├── final_course_data_for_bert.csv # Dataset
+├── flowchart.json                 # Structured roadmap (JSON)
 └── README.md
+```
 
 ---
 
@@ -76,15 +82,7 @@ Career_Recommendation/
     ```
 
 ---
-
-## ▶️ Usage
-
-Run the program:
-
-```bash
-```
-
-# Program Flow
+## Program Flow
 
 1. Enter your interests (e.g., “Artificial Intelligence, Web Development”).
 2. Enter your qualification (e.g., “12th grade”, “Diploma”, “Bachelor’s”).
@@ -116,7 +114,7 @@ Run the program:
 
 ---
 
-# Sample Roadmap JSON (excerpt):
+## Sample Roadmap JSON (excerpt):
 
 ```
 {
@@ -133,8 +131,9 @@ Run the program:
 }
 ```
 
-#Flowchart Visualization:
+## Flowchart Visualization:
 The roadmap is rendered in courses.pdf with hierarchical nodes for semesters, subjects, projects, and skills.
+
 ---
 
 # 📌 Roadmap
@@ -146,6 +145,5 @@ The roadmap is rendered in courses.pdf with hierarchical nodes for semesters, su
 - Job recommendation engine (**LinkedIn/Indeed API integration**)  
 - Multi-language support  
 
-👥 Authors
-Dhanesh J
+Authors- Dhanesh J
 
