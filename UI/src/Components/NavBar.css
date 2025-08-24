@@ -1,0 +1,111 @@
+/* Navbar.css */
+
+.navbar {
+  font-family: system-ui, sans-serif;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1100px;
+  padding: 0.75rem 1.5rem;
+  background: rgba(20, 20, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 9999px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+  flex-wrap: wrap;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.app-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar-right {
+  font-weight: bold;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-link {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgb(107, 121, 241);
+}
+
+.nav-link.active {
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar {
+  animation: fadeDown 0.4s ease-out;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    border-radius: 20px;
+    gap: .4rem;
+    text-align: center;
+  }
+
+  .navbar-left {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 0.3rem;
+  }
+
+  .app-name {
+    font-size: 1.05rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}

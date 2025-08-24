@@ -1,0 +1,83 @@
+.subreddit-page {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.subreddit-page h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ff4b2b;
+  text-shadow: 0 0 10px rgba(255, 75, 43, 0.6);
+}
+
+.subreddit-post-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.subreddit-post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  animation: pulseGlow 1.2s infinite alternate;
+}
+
+.subreddit-post-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.subreddit-post-card p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.meta {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  color: #aaa;
+}
+
+.subreddit-post-card a {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #1db954;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@keyframes pulseGlow {
+  from {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .subreddit-page {
+    padding: 1rem;
+    margin-top: 80px;
+  }
+
+  .subreddit-post-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .subreddit-post-card {
+    padding: 1rem;
+  }
+}

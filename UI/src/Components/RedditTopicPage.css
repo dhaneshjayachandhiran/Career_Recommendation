@@ -1,0 +1,31 @@
+.reddit-topic {
+  padding: 2rem;
+  color: white;
+  max-width: auto;
+  margin: 100px auto;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+.reddit-topic h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: 0.5rem;
+}
+
+.comments-section {
+  margin-top: 2rem;
+}
+
+.comment {
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,0.03);
+  padding: 1rem;
+  border-radius: 8px;
+}

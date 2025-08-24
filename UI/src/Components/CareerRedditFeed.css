@@ -1,0 +1,151 @@
+.reddit-feed {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0 2rem;
+  padding-bottom: 40px;
+  margin-top: 100px;
+  max-height: 90vh;
+  overflow-y: auto;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  position: relative;
+}
+
+.reddit-feed h2 {
+  position: sticky;
+  top: 0;
+  padding: 1rem 0;
+  margin: 0;
+  z-index: 10;
+  font-size: 1.5rem;
+}
+
+.reddit-card {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.reddit-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.reddit-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-bottom: 0.5rem;
+}
+
+.reddit-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  color: #aaa;
+}
+
+
+.reddit-card.expanded {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.reddit-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ff4b2b;
+}
+
+.reddit-header-row {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background: rgba(0, 0, 0, 0.555); /* Match the feed backdrop */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.reddit-header-row h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.subreddit-selector {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subreddit-selector select {
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  background: #242424;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+
+/* ===== Scrollbar Styling for .reddit-feed ===== */
+.reddit-feed::-webkit-scrollbar {
+  width: 10px;
+}
+
+.reddit-feed::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.reddit-feed::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.reddit-feed::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 75, 43, 0.5); /* 🔥 Match the theme */
+}
+
+/* Firefox scrollbar support */
+.reddit-feed {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.2) transparent;
+}
+
+
+@media (max-width: 768px) {
+  .reddit-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .subreddit-selector {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .reddit-feed h2 {
+    font-size: 1.3rem;
+  }
+
+  .subreddit-selector select {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .reddit-meta {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
