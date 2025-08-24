@@ -144,6 +144,3 @@ The roadmap is rendered in courses.pdf with hierarchical nodes for semesters, su
 - Web-based UI (**Flask/Streamlit**)  
 - Job recommendation engine (**LinkedIn/Indeed API integration**)  
 - Multi-language support  
-
-Authors- Dhanesh J
-
